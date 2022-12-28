@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <style>
+    * {margin:0; padding:0;}
+     
+    body {
+     background-color:#fff;
+     font-family:'Times New Roman', Times, serif, Helvetica, sans-serif;
+     color:#000;
+    }
+
+    nav {
+     margin:auto;
+     text-align: center;
+     width: 100%;
+    } 
+
+    nav ul ul {
+     display: none;
+    }
+
+    nav ul li:hover > ul{
+    display: block;
+    width: 150px;
+    }
+
+    nav ul {
+     background: #19aa8d;
+     padding: 0 20px;
+     list-style: none;
+     position: relative;
+     display: inline-table;
+     width: 100%;
+    }
+
+    nav ul:after {
+     content: ""; 
+     clear:both; 
+     display: block;
+    }
+
+    nav ul li{
+     float:left;
+    }
+
+    nav ul li:hover{
+     background:white;
+    }
+
+    nav ul li:hover a{
+     color:black;
+    }
+
+    nav ul li a{
+     display: block;
+     padding: 25px;
+     color: white;
+     text-decoration: none;
+    }
+
+    nav ul ul{
+     background: whitesmoke;
+     border-radius: 0px;
+     padding: 0;
+     position: absolute;
+     top:100%;
+    }
+
+    nav ul ul li{
+     float:none;
+     border-top: 1px soild white;
+     border-bottom: 1px solid white;
+     position: relative;
+    }
+
+    nav ul ul li a{
+     padding: 15px 40px;
+     color: black;
+    }
+
+    nav ul ul li a:hover{
+     background-color: white;
+    }
+
+    nav ul ul ul{
+     position: absolute;
+     left: 100%;
+     top: 0;
+    }
+    </style>
+</head>
+<body>
+<nav>
+    <ul>
+     	<li><a href="#">Home</a></li>
+     	<li><a href="#">News</a>
+         	<ul>
+             	<li><a href="#">Terbaru</a></li>
+             	<li><a href="#">Terkini</a></li>
+         	</ul>
+        </li>
+        <li><a href="#">About</a></li>
+   </ul>
+</nav>
+    <h1>Selamat Datang</h1>
+    <h2>Sanchia Nabilah Saraswati</h2>
+</body>
+</html>
